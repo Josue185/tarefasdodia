@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", loadTasksFromLocalStorage);
 
 function addTask() {
     const taskName = document.getElementById("task-name").value;
+    const taskdescricao = document.getElementById("task-descricao").value;
     const taskDate = document.getElementById("task-date").value;
     const taskStatus = document.getElementById("task-status").value;
 
@@ -78,6 +79,7 @@ function addTask() {
     taskList.appendChild(taskItem);
 
     document.getElementById("task-name").value = "";
+    document.getElementById("task-descricao").value = "";
     document.getElementById("task-date").value = "";
     document.getElementById("task-status").value = "Pendente";
 
